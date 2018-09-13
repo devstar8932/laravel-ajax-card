@@ -1,0 +1,177 @@
+.card {
+    overflow:hidden;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.card-header {
+    background: white;
+    padding: .25rem .5rem;
+    border-top-right-radius: 10px !important;
+    border-top-left-radius: 10px !important;
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+        /* inset 0 0 0 1000px
+        rgba(67,52,109,.2); */
+    /* transition: all 0.4s cubic-beziler(.37,.26,.109,.2); */
+}
+
+.card-body {
+    padding: .4rem;
+}
+.righttop {
+    float: right;
+    margin-top: 8px;
+}
+.img-body {
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    color: white;
+    padding: 5px 15px;
+    height: 400px;
+    opacity: 100;
+}
+.img-body:hover #avatar{
+    animation:none;
+    box-shadow: 0;
+    width: 90px;
+    height: 90px;
+}
+
+#avatar {
+    transition: all 0.4s cubic-beziler(.37,.26,.35,1);
+    display: inline-block;
+    width:70px;
+    height: 70px;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    border-radius: 100px;
+    box-shadow: 0px 30px 30px -25px rgba(0,0,0,0.6);
+    background-size: cover;
+}
+.img-body:hover .middle-ib{
+    animation:none;
+    font-size: 20px;
+    font-style: inherit;
+}
+.middle-ib{
+    transition: all 0.4s cubic-beziler(.37,.26,.35,1);
+    display: inline-block;
+    font-size: 15px;
+    margin: 70px 0px;
+}
+.eye-comment {
+    font-size: 14px;
+}
+.status-sections {
+    margin-top: 5px;
+    height: 25px;
+}
+.st {
+    float: left;
+}
+.bt {
+    float: right;
+}
+.status-sections .st {
+    font-weight: bold;
+}
+.status-sections .bt img {
+    margin-top: -5px;
+}
+.status-sections .bt {
+    font-weight: bold;  
+    margin-right: 10px;
+}
+
+.info-sections img{
+    margin-top: -10px;
+}
+
+.pg-row {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pg-icons img{
+    float: right;
+    margin-right: 15px;
+}
+
+.potatoes {
+    background-image:url('../images/potatoes.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    padding-bottom: 10px;
+}
+.potatoes p {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+.potatoes span {
+    background: #0b84ff;
+    padding: 1px 6px;
+    cursor: pointer;
+}
+
+.bell_alert {
+    transition: transform 0.3s ease-out;
+}
+
+.bell_alert:hover {
+    transform: rotate(360deg);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6)
+}
+
+.topbtns {
+    padding-top: 30px;
+}
+.topbtns span {
+    font-size: 14px;    
+}
+.available {
+    color: white;
+    padding: 3px 10px;
+    border-radius: 20px;
+    background: #fc1680;
+    cursor: pointer;
+}
+
+.top-section {
+    margin-top: 30px;
+}
+.col-md-4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 35px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .col-md-4 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
